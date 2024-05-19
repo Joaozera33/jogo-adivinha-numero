@@ -1,0 +1,99 @@
+:root {
+    --roxo: #b255f0;
+    --amarelo: #e6d21f;
+    --roxo-efeito: #c88bf0;
+    --roxo-efeito-ativo: #8d64a8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(160deg, var(--roxo), var(--amarelo)) no-repeat;
+    background-size: 150% 150%;
+    animation: gradient-animation 5s ease infinite;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.principal p, a{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.titulo {
+    font-weight: bold;
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+
+.conteudo-principal {
+    margin-bottom: 100px;
+}
+
+.conteudo-principal .input-chute{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+
+.botoes {
+    background-color: var(--roxo);
+    border-radius: 10px;
+    border: 0;
+    padding: 15px;
+    margin-left: 10px;
+    transition: .2s;
+}
+
+.ativo {
+    background-color: var(--roxo-efeito-ativo);
+    pointer-events: none;
+}
+
+.botoes:hover {
+    background-color: var(--roxo-efeito);
+    cursor: pointer;
+}
+
+.botoes:active {
+    background-color: var(--roxo-efeito-ativo);
+}
+
+.conteudo-tentativas {
+    margin-bottom: 50px;
+}
+
+.conteudo-tentativas a{
+    margin-left: 4em;
+}
+
+
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
