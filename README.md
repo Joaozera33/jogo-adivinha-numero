@@ -1,4 +1,4 @@
-# jogo-adivinha-numero
+# Jogo de adivinhar o número
 Um jogo feito para aprendizagem de JavaScript. Nesse jogo você deve adivinhar o número entre 1 e 100 que o computador escolheu.<br>
 Digite o seu palpite e clique em 'Adivinhar'.<br>
 Caso queira gerar um novo número e reiniciar o jogo, clique em 'Novo número'. <br>
