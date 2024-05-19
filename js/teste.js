@@ -39,26 +39,26 @@ function testeJogo()
     if (restaTentativas > 0 && chute > 0 && chute <= 100)
     {
         if (numeroSecreto == chute)
-            {
-                alert('Parabéns! Você acertou!\nJogue novamente.');
-                geraNumero();
-            }
-            else if (numeroSecreto < chute)
-            {
-                alert('Errou! Você digitou um número maior!');
-                numeroTentativas++;
-                restaTentativas = maxTentativas - numeroTentativas;
-                tentativasRestantesTexto.innerHTML = 'Tentativas restantes: ' + restaTentativas;
-                tentativas.innerHTML = "Tentativas: " + numeroTentativas;
-            }
-            else if (numeroSecreto > chute)
-            {
-                alert('Errou! Você digitou um número menor!');
-                numeroTentativas++;
-                restaTentativas = maxTentativas - numeroTentativas;
-                tentativasRestantesTexto.innerHTML = 'Tentativas restantes: ' + restaTentativas;
-                tentativas.innerHTML = "Tentativas: " + numeroTentativas;
-            }
+        {
+            alert('Parabéns! Você acertou!\nJogue novamente.');
+            geraNumero();
+        }
+        else if (numeroSecreto < chute)
+        {
+            alert('Errou! Você digitou um número maior!');
+            numeroTentativas++;
+            restaTentativas = maxTentativas - numeroTentativas;
+            tentativasRestantesTexto.innerHTML = 'Tentativas restantes: ' + restaTentativas;
+            tentativas.innerHTML = "Tentativas: " + numeroTentativas;
+        }
+        else if (numeroSecreto > chute)
+        {
+            alert('Errou! Você digitou um número menor!');
+            numeroTentativas++;
+            restaTentativas = maxTentativas - numeroTentativas;
+            tentativasRestantesTexto.innerHTML = 'Tentativas restantes: ' + restaTentativas;
+            tentativas.innerHTML = "Tentativas: " + numeroTentativas;
+        }
     }
     else if (restaTentativas <= 0)
     {
