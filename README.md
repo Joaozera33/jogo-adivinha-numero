@@ -1,5 +1,5 @@
 # jogo-adivinha-numero
-Um jogo feito para aprendizagem de JavaScript, onde você tenta adivinhar um número entre 1 e 100 que o computador escolheu.<br>
+Um jogo feito para aprendizagem de JavaScript, onde você é desafiado a adivinhar um número entre 1 e 100 que o computador escolheu.<br>
 Dificuldades: Fácil, Normal e Difícil. <br>
 O jogo inicia na dificuldade normal, mas você pode escolher outros níveis de dificuldades. <br>
 Na dificuldade fácil você tem 20 tentativas, na dificuldade normal são 10, e no difícil são apenas 3 tentativas. <br>
